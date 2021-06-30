@@ -8,7 +8,8 @@ namespace FunctionalPrograming
         {
             Console.WriteLine("welcome to Basic Programing ");
             Console.WriteLine("1) LeapYear(Year)");
-            Console.WriteLine("2) exit");
+            Console.WriteLine("2) Factors(num)");
+            Console.WriteLine("3) exit");
             Console.WriteLine("enter the option");
             switch (Console.ReadLine())
             {
@@ -17,7 +18,10 @@ namespace FunctionalPrograming
                     break;
                 
                 case "2":
-
+                    Factors.ReadInput();
+                    break;
+                case "3":
+                     
                     break;
                 default:
                     Console.WriteLine("enter the right option");
