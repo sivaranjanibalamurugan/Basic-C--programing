@@ -18,7 +18,7 @@ namespace FunctionalPrograming
         {
             while (num % 2 == 0)
             {
-                Console.Write(2 + " ");
+                Console.WriteLine(2 + " ");
                 num /= 2;
             }
 
@@ -29,7 +29,7 @@ namespace FunctionalPrograming
                 // While i divides n, print i and divide n
                 while (num % i == 0)
                 {
-                    Console.Write(i + " ");
+                    Console.WriteLine(i + " ");
                     num /= i;
                 }
             }
