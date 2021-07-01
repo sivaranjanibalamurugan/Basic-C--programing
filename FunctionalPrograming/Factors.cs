@@ -11,22 +11,22 @@ namespace FunctionalPrograming
         public static void ReadInput()
         {
             Console.WriteLine("enter number to find factors:");
-            int num = Convert.ToInt32(Console.ReadLine());
+            int num = Convert.ToInt32(Console.ReadLine());//conversion
             FindFactors(num);
         }
         private static void FindFactors(int num)
         {
+            //condition to find the factors 
             while (num % 2 == 0)
             {
                 Console.WriteLine(2 + " ");
                 num /= 2;
             }
 
-            // n must be odd at this point. So we can
-            // skip one element (Note i = i +2)
+            //checking for a odd number
             for (int i = 3; i <= Math.Sqrt(num); i += 2)
             {
-                // While i divides n, print i and divide n
+                // While i divides num, print i and divide num
                 while (num % i == 0)
                 {
                     Console.WriteLine(i + " ");
@@ -34,8 +34,8 @@ namespace FunctionalPrograming
                 }
             }
 
-            // This condition is to handle the case whien
-            // n is a prime number greater than 2
+            // This condition when num is prime and greater than 2
+           
             if (num > 2)
                 Console.WriteLine(num);
         }
